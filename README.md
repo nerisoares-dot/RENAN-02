@@ -82,7 +82,7 @@ font-size: 0.9rem;
 
 <main>
 <article>
-<img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=150&auto=format&fit=crop&q=80&quot; alt="Foto do autor Luis Puhl">
+<img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=150&auto=format&fit=crop&q=80&quot; alt="Foto do autor NERI RENAN">
 <h2>Dominando o Arremesso de 3 Pontos</h2>
 <p><strong>Por:</strong> NERI RENAN</p>
 <p>Seja bem-vindo ao blog! Hoje vamos falar sobre como melhorar a sua mecanica de arremesso e ter mais precisao nas quadras.</p>
