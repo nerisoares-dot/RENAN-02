@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Studio | Agência Digital</title>
-    <!-- Tailwind CSS para Estilização Rápida e Moderna -->
-    <script src="https://jsdelivr.net"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
@@ -44,7 +44,7 @@
     </header>
 
     <!-- 💡 HERO SECTION (INÍCIO) -->
-    <section id="inicio" class="pt-32 pb-20 md:pt-48 md:pb-32 bg-linear-to-b from-indigo-50 to-white">
+    <section id="inicio" class="pt-32 pb-20 md:pt-48 md:pb-32 bg-gradient-to-b from-indigo-50 to-white">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6 text-center md:text-left">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -59,8 +59,7 @@
                 </div>
             </div>
             <div class="relative flex justify-center">
-                <!-- Ilustração geométrica moderna simulando um layout de site -->
-                <div class="w-full max-w-md aspect-square bg-linear-to-tr from-indigo-500 to-purple-600 rounded-3xl shadow-2xl rotate-3 transform transition hover:rotate-0 duration-500 flex items-center justify-center p-8 text-white text-7xl font-bold">
+                <div class="w-full max-w-md aspect-square bg-gradient-to-tr from-indigo-500 to-purple-600 rounded-3xl shadow-2xl rotate-3 transform transition hover:rotate-0 duration-500 flex items-center justify-center p-8 text-white text-7xl font-bold">
                     [ / ]
                 </div>
             </div>
@@ -103,7 +102,7 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
                 <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">Quem Somos</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900⚡">Criamos pontes entre ideias inovadoras e resultados reais</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Criamos pontes entre ideias inovadoras e resultados reais</h2>
                 <p class="text-slate-600 leading-relaxed">
                     Nascemos com a missão de descomplicar a tecnologia para empresas de todos os portes. Nossa equipe conta com desenvolvedores, designers e estrategistas obstinados por performance e estética visual.
                 </p>
@@ -143,9 +142,35 @@
                 <p class="text-slate-600">Preencha os campos abaixo e nosso time responderá em até 24 horas úteis.</p>
             </div>
 
-            <!-- Formulário com JavaScript Interativo -->
-            <form id="contact-form" class="space-y-6 bg-slate-50 p-8 rounded-2xl border border-slate-100">
+            <!-- Formulário Completo -->
+            <form id="contact-form" class="space-y-6 bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm">
                 <div class="grid sm:grid-cols-2 gap-6">
                     <div class="space-y-2">
                         <label for="name" class="text-xs font-bold text-slate-700 uppercase">Nome Completo</label>
+                        <input type="text" id="name" required placeholder="Seu nome" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:border-indigo-600 bg-white">
+                    </div>
+                    <div class="space-y-2">
+                        <label for="email" class="text-xs font-bold text-slate-700 uppercase">E-mail</label>
+                        <input type="email" id="email" required placeholder="seu@email.com" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:border-indigo-600 bg-white">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label for="message" class="text-xs font-bold text-slate-700 uppercase">Mensagem</label>
+                    <textarea id="message" rows="4" required placeholder="Conte um pouco sobre o seu projeto..." class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:border-indigo-600 bg-white"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3.5 rounded-lg hover:bg-indigo-700 transition">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
 
+    <script>
+        // Toggle do Menu Mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
